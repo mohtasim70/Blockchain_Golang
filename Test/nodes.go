@@ -6,8 +6,8 @@ import (
 	"net"
 	"os"
 
-	a2 "github.com/ehteshamz/assignment02IBC"
-	a3 "github.com/ehteshamz/assignment03IBC"
+	a2 "github.com/mohtasim70/assignment02IBC"
+	a3 "github.com/mohtasim70/assignment03IBC"
 )
 
 func main() {
@@ -35,7 +35,7 @@ func main() {
 	//Then satoshi sends the chain with x+1 blocks
 	log.Println("receiving Chain")
 	chainHead := a3.ReceiveChain(conn)
-	log.Println(a2.CalculateBalance("Satoshi", &chainHead))
+	log.Println(a2.CalculateBalance("Satoshi", chainHead))
 
 	//Each node then connects to the other peer info received from satoshi
 	//The topology eventually becomes a ring topology

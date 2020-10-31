@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	a3 "github.com/ehteshamz/assignment03IBC"
+	a3 "github.com/mohtasim70/assignment03IBC"
 )
 
 func main() {

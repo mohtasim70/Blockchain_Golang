@@ -165,8 +165,8 @@ func ReadString(conn net.Conn) string {
 }
 
 //Then satoshi sends the chain with x+1 blocks
-func ReceiveChain(conn net.Conn) *a2.Block {
-	var block *a2.Block
+func ReceiveChain(conn net.Conn) a2.Block {
+	var block a2.Block
 	gobEncoder := gob.NewDecoder(conn)
 	err := gobEncoder.Decode(&block)
 	if err != nil {
